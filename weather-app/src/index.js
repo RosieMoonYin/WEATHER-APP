@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-svg-core/styles.css'; // import the styles
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSun, faCloud, faCloudRain, faSnowflake } from '@fortawesome/free-solid-svg-icons';
 
+library.add(faSun, faCloud, faCloudRain, faSnowflake); // add icons to the library
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

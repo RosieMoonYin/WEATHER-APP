@@ -2,6 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import Weather from './Weather';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSun, faCloud, faCloudRain, faSnowflake } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faSun, faCloud, faCloudRain, faSnowflake);
+
 const App = () => {
   const [city, setCity] = useState('Your City');
   const [weatherData, setWeatherData] = useState({
