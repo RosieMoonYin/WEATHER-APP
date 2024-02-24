@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 /* src/App.css */
 .weather-container {
   border: 1px solid #ccc;
@@ -9,4 +8,13 @@
   text-align: center;
   max-width: 300px;
   margin: 0 auto;
+}
+
+.weather-container p {
+  margin: 10px 0;
+}
+
+.weather-container.loading {
+  font-style: italic;
+  color: #888;
 }
