@@ -1,6 +1,8 @@
 // src/Weather.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './App.css';
+import './index.css';
 
 const Weather = ({ city, temperature, description, loading }) => {
   const getWeatherIcon = (weatherDescription) => {
